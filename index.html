@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -242,9 +243,6 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:10
 .footer-bar{border-top:1px solid var(--border);padding:10px 28px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
 .footer-note{font-size:10px;color:var(--ink3);font-family:var(--mono);line-height:1.6}
 .footer-cta{font-size:11px;color:var(--ink2);font-style:italic;font-family:var(--serif)}
-.linkedin-btn{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:var(--r-sm);background:#0a66c2;color:#fff;font-size:11px;font-weight:600;font-family:var(--sans);text-decoration:none;border:none;cursor:pointer;transition:all var(--t-base);letter-spacing:.01em;box-shadow:0 2px 8px rgba(10,102,194,.30)}
-.linkedin-btn:hover{background:#0856a8;transform:translateY(-1px);box-shadow:0 4px 14px rgba(10,102,194,.40)}
-.linkedin-btn svg{flex-shrink:0}
 
 
 </style>
@@ -256,16 +254,10 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:10
     <h1>ISO 19650 <em>&</em> IDM — governança da informação</h1>
     <p>Guia visual interpretativo para apoio ao estudo da ISO 19650, com exemplos aplicados · Kanban · Gantt · Clique em qualquer item para ver exemplos</p>
   </div>
-  <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
-    <div class="view-tabs" style="align-items:center">
-      <button class="vtab active" onclick="setView('kanban',this)">Kanban</button>
-      <button class="vtab" onclick="setView('gantt',this)">Gantt</button>
-      <button class="guide-btn" id="guide-toggle" onclick="toggleGuide(this)" title="Fluxos normativos e diagramas da norma">?</button>
-    </div>
-    <a class="linkedin-btn" href="https://www.linkedin.com/in/leonardo-barbosa-85a20b135/" target="_blank" rel="noopener noreferrer">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="#fff"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      Leonardo Barbosa
-    </a>
+  <div class="view-tabs" style="align-items:center">
+    <button class="vtab active" onclick="setView('kanban',this)">Kanban</button>
+    <button class="vtab" onclick="setView('gantt',this)">Gantt</button>
+    <button class="guide-btn" id="guide-toggle" onclick="toggleGuide(this)" title="Fluxos normativos e diagramas da norma">?</button>
   </div>
 </div>
 
@@ -651,13 +643,7 @@ body{font-family:var(--sans);background:var(--bg);color:var(--ink);min-height:10
 <div class="legend" id="legend"></div>
 <div class="footer-bar">
   <span class="footer-note">Os itens representam relações conceituais entre documentos e entregáveis · Exemplos têm caráter ilustrativo · Expressões como "deve" e "obrigatório" nos exemplos referem-se ao cenário descrito, não à norma universal</span>
-  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-    <span class="footer-cta">Artefato de apoio ao estudo e discussão técnica da governança da informação.</span>
-    <a class="linkedin-btn" href="https://www.linkedin.com/in/leonardo-barbosa-85a20b135/" target="_blank" rel="noopener noreferrer" style="font-size:10px;padding:4px 11px">
-      <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#fff"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-      Leonardo Barbosa · BIM Manager
-    </a>
-  </div>
+  <span class="footer-cta">Artefato de apoio ao estudo e discussão técnica da governança da informação.</span>
 </div>
 
 <!-- Modal diagrama ampliado -->
